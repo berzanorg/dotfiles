@@ -1,0 +1,78 @@
+// Zed Settings: https://zed.dev/docs/configuring-zed
+{
+    "agent": {
+        "default_height": 540,
+        "dock": "bottom"
+    },
+    "agent_servers": {
+        "claude": {
+            "ignore_system_version": true
+        }
+    },
+    "auto_update": false,
+    "autosave": "on_focus_change",
+    "buffer_font_size": 14,
+    "confirm_quit": true,
+    "git_panel": {
+        "default_width": 360
+    },
+    "gutter": {
+        "breakpoints": false,
+        "folds": true,
+        "line_numbers": false,
+        "min_line_number_digits": 0,
+        "runnables": false
+    },
+    "icon_theme": "Material Icon Theme",
+    "image_viewer": {
+        "unit": "decimal"
+    },
+    "max_tabs": 1,
+    "minimap": {
+        "show": "always"
+    },
+    "node": {
+        "ignore_system_version": true
+    },
+    "project_panel": {
+        "default_width": 360,
+        "drag_and_drop": false,
+        "hide_root": true
+    },
+    "restore_on_startup": "none",
+    "scrollbar": {
+        "axes": {
+            "vertical": false
+        }
+    },
+    "status_bar": {
+        "experimental.show": false
+    },
+    "tab_bar": {
+        "show": false
+    },
+    "tab_size": 4,
+    "telemetry": {
+        "diagnostics": false,
+        "metrics": false
+    },
+    "terminal": {
+        "blinking": "on",
+        "cursor_shape": "bar",
+        "default_height": 360,
+        "toolbar": {
+            "breadcrumbs": false
+        }
+    },
+    "theme": "One Dark",
+    "title_bar": {
+        "show_onboarding_banner": false,
+        "show_sign_in": false
+    },
+    "toolbar": {
+        "agent_review": false,
+        "breadcrumbs": false,
+        "quick_actions": false
+    },
+    "when_closing_with_no_tabs": "keep_window_open"
+}
