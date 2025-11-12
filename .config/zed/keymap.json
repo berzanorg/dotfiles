@@ -1,0 +1,62 @@
+// Zed Key Bindings: https://zed.dev/docs/key-bindings
+[
+    // Disable some of the default key bindings.
+    {
+        "context": "",
+        "bindings": {
+            "cmd-h": null,
+            "cmd-e": null,
+            "cmd-j": null,
+            "cmd-r": null,
+            "cmd-t": null
+        }
+    },
+    // Open and focus the agent panel on cmd-h, if it is not open.
+    {
+        "context": "bottom_dock != agent_panel",
+        "bindings": {
+            "cmd-h": "agent::ToggleFocus"
+        }
+    },
+    // Close the bottom dock on cmd-h, if the agent panel is open.
+    {
+        "context": "!!(bottom_dock == agent_panel)",
+        "bindings": {
+            "cmd-h": "workspace::ToggleBottomDock"
+        }
+    },
+    // Open and focus the terminal panel on cmd-j, if it is not open.
+    {
+        "context": "bottom_dock != TerminalPanel",
+        "bindings": {
+            "cmd-j": "terminal_panel::ToggleFocus"
+        }
+    },
+    // Close the bottom dock on cmd-j, if the terminal panel is open.
+    {
+        "context": "!!(bottom_dock == TerminalPanel)",
+        "bindings": {
+            "cmd-j": "workspace::ToggleBottomDock"
+        }
+    },
+    // Open and focus the project panel on cmd-e, if it is not open.
+    {
+        "context": "!ProjectPanel",
+        "bindings": {
+            "cmd-e": "project_panel::ToggleFocus"
+        }
+    },
+    // Open and focus the git panel on cmd-r, if it is not open.
+    {
+        "context": "!GitPanel",
+        "bindings": {
+            "cmd-r": "git_panel::ToggleFocus"
+        }
+    },
+    // Open task spawn menu on cmd-t.
+    {
+        "bindings": {
+            "cmd-t": "task::Spawn"
+        }
+    }
+]
